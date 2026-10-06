@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digicard - Agencia de Diseño Gráfico. Transformamos ideas en experiencias visuales impactantes.">
+    <title>Digicard | Agencia de Diseño Grafico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="logo" aria-label="Digicard Inicio">
+                <span class="logo__icon"><i class="fa-solid fa-pen-nib"></i></span>
+                <span class="logo__text">Digi<span class="logo__accent">card</span></span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Navegación principal">
+                <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav__menu" id="navMenu" role="menubar">
+                    <li role="none"><a href="#inicio" class="nav__link active" role="menuitem">Inicio</a></li>
+                    <li role="none"><a href="#servicios" class="nav__link" role="menuitem">Servicios</a></li>
+                    <li role="none"><a href="#portafolio" class="nav__link" role="menuitem">Portafolio</a></li>
+                    <li role="none"><a href="#nosotros" class="nav__link" role="menuitem">Nosotros</a></li>
+                    <li role="none"><a href="#testimonios" class="nav__link" role="menuitem">Testimonios</a></li>
+                    <li role="none"><a href="#contacto" class="nav__link nav__link--cta" role="menuitem">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero" id="inicio" aria-labelledby="heroTitle">
+            <div class="hero__bg" aria-hidden="true"></div>
+            <div class="container hero__container">
+                <article class="hero__content">
+                    <span class="hero__tag">Agencia Creativa</span>
+                    <h1 id="heroTitle" class="hero__title">
+                        Diseñamos <span class="text-gradient">experiencias</span> que conectan marcas con personas
+                    </h1>
+                    <p class="hero__description">
+                        En Digicard transformamos tus ideas en identidades visuales memorables. 
+                        Desde branding hasta interfaces digitales, creamos diseño con propósito.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#portafolio" class="btn btn--primary">
+                            <span>Ver Proyectos</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contacto" class="btn btn--outline">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Hablemos</span>
+                        </a>
+                    </div>
+                    <aside class="hero__stats" aria-label="Estadísticas de la agencia">
+                        <div class="stat">
+                            <strong class="stat__number" data-count="25">0</strong>
+                            <span class="stat__label">Proyectos</span>
+                        </div>
+                        <div class="stat">
+                            <strong class="stat__number" data-count="12">0</strong>
+                            <span class="stat__label">Clientes</span>
+                        </div>
+                        <div class="stat">
+                            <strong class="stat__number" data-count="15">0</strong>
+                            <span class="stat__label">Premios</span>
+                        </div>
+                    </aside>
+                </article>
+                <figure class="hero__figure">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" 
+                         alt="Equipo de diseño trabajando en proyectos creativos" 
+                         class="hero__image" 
+                         loading="eager">
+                    <div class="hero__badge" aria-hidden="true">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Top Rated</span>
+                    </div>
+                </figure>
+            </div>
+            <a href="#servicios" class="scroll-indicator" aria-label="Desplazarse a servicios">
+                <span class="scroll-indicator__mouse">
+                    <span class="scroll-indicator__wheel"></span>
+                </span>
+            </a>
+        </section>
+
+        <!-- ==================== SERVICIOS ==================== -->
+        <section class="services section" id="servicios" aria-labelledby="servicesTitle">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__tag">Qué Hacemos</span>
+                    <h2 id="servicesTitle" class="section__title">Nuestros <span class="text-gradient">Servicios</span></h2>
+                    <p class="section__subtitle">Soluciones de diseño integral para potenciar tu marca en cada punto de contacto.</p>
+                </header>
+                <div class="services__grid">
+                    <article class="service-card" data-aos="fade-up">
+                        <div class="service-card__icon">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3 class="service-card__title">Branding & Identidad</h3>
+                        <p class="service-card__text">Creamos identidades visuales coherentes y memorables que comunican la esencia de tu marca desde el primer vistazo.</p>
+                        <a href="#contacto" class="service-card__link">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-card__icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-card__title">Diseño Web & UI/UX</h3>
+                        <p class="service-card__text">Interfaces intuitivas y atractivas que mejoran la experiencia del usuario y convierten visitantes en clientes.</p>
+                        <a href="#contacto" class="service-card__link">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-card__icon">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3 class="service-card__title">Marketing Digital</h3>
+                        <p class="service-card__text">Estrategias visuales para redes sociales, campañas publicitarias y contenido que engancha a tu audiencia.</p>
+                        <a href="#contacto" class="service-card__link">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-card__icon">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <h3 class="service-card__title">Diseño Editorial</h3>
+                        <p class="service-card__text">Revistas, catálogos, brochures y cualquier pieza impresa con una tipografía y composición impecables.</p>
+                        <a href="#contacto" class="service-card__link">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-card__icon">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <h3 class="service-card__title">Packaging</h3>
+                        <p class="service-card__text">Diseño de empaques que destaca en el punto de venta y transmite los valores de tu producto al consumidor.</p>
+                        <a href="#contacto" class="service-card__link">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-card__icon">
+                            <i class="fa-solid fa-film"></i>
+                        </div>
+                        <h3 class="service-card__title">Motion Graphics</h3>
+                        <p class="service-card__text">Animaciones y videos explicativos que dan vida a tu mensaje y captan la atención de manera dinámica.</p>
+                        <a href="#contacto" class="service-card__link">Saber más <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PORTAFOLIO ==================== -->
+        <section class="portfolio section section--dark" id="portafolio" aria-labelledby="portfolioTitle">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__tag">Trabajos</span>
+                    <h2 id="portfolioTitle" class="section__title">Nuestro <span class="text-gradient">Portafolio</span></h2>
+                    <p class="section__subtitle">Una selección de proyectos que reflejan nuestra pasión por el diseño estratégico.</p>
+                </header>
+
+                <nav class="portfolio__filters" aria-label="Filtrar proyectos">
+                    <button class="portfolio__filter active" data-filter="all">Todos</button>
+                    <button class="portfolio__filter" data-filter="branding">Branding</button>
+                    <button class="portfolio__filter" data-filter="web">Web</button>
+                    <button class="portfolio__filter" data-filter="print">Print</button>
+                    <button class="portfolio__filter" data-filter="packaging">Packaging</button>
+                </nav>
+
+                <div class="portfolio__grid">
+                    <article class="portfolio__item" data-category="branding">
+                        <figure class="portfolio__figure">
+                            <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=600&h=450&fit=crop" alt="Proyecto de branding para cafetería artesanal" loading="lazy">
+                            <figcaption class="portfolio__overlay">
+                                <span class="portfolio__category">Branding</span>
+                                <h3 class="portfolio__name">Café Aroma</h3>
+                                <a href="#" class="portfolio__link" aria-label="Ver proyecto Café Aroma"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="portfolio__item" data-category="web">
+                        <figure class="portfolio__figure">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop" alt="Diseño web para plataforma de tecnología" loading="lazy">
+                            <figcaption class="portfolio__overlay">
+                                <span class="portfolio__category">Web / UI</span>
+                                <h3 class="portfolio__name">TechFlow App</h3>
+                                <a href="#" class="portfolio__link" aria-label="Ver proyecto TechFlow"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="portfolio__item" data-category="packaging">
+                        <figure class="portfolio__figure">
+                            <img src="https://images.unsplash.com/photo-1634128221889-82ed6efebfc3?w=600&h=450&fit=crop" alt="Diseño de empaque para productos orgánicos" loading="lazy">
+                            <figcaption class="portfolio__overlay">
+                                <span class="portfolio__category">Packaging</span>
+                                <h3 class="portfolio__name">GreenLife Organics</h3>
+                                <a href="#" class="portfolio__link" aria-label="Ver proyecto GreenLife"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="portfolio__item" data-category="print">
+                        <figure class="portfolio__figure">
+                            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&h=450&fit=crop" alt="Diseño editorial para revista de arquitectura" loading="lazy">
+                            <figcaption class="portfolio__overlay">
+                                <span class="portfolio__category">Editorial</span>
+                                <h3 class="portfolio__name">Arq Magazine</h3>
+                                <a href="#" class="portfolio__link" aria-label="Ver proyecto Arq Magazine"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="portfolio__item" data-category="branding">
+                        <figure class="portfolio__figure">
+                            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=450&fit=crop" alt="Identidad corporativa para agencia inmobiliaria" loading="lazy">
+                            <figcaption class="portfolio__overlay">
+                                <span class="portfolio__category">Branding</span>
+                                <h3 class="portfolio__name">Horizon Real Estate</h3>
+                                <a href="#" class="portfolio__link" aria-label="Ver proyecto Horizon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="portfolio__item" data-category="web">
+                        <figure class="portfolio__figure">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=450&fit=crop" alt="Dashboard de analytics con diseño moderno" loading="lazy">
+                            <figcaption class="portfolio__overlay">
+                                <span class="portfolio__category">Web / UI</span>
+                                <h3 class="portfolio__name">DataView Pro</h3>
+                                <a href="#" class="portfolio__link" aria-label="Ver proyecto DataView"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== NOSOTROS ==================== -->
+        <section class="about section" id="nosotros" aria-labelledby="aboutTitle">
+            <div class="container">
+                <div class="about__grid">
+                    <figure class="about__figure">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&h=500&fit=crop" 
+                             alt="Equipo creativo de Digicard colaborando en el estudio" 
+                             class="about__image" 
+                             loading="lazy">
+                        <div class="about__experience">
+                            <span class="about__years">10+</span>
+                            <span class="about__label">Años de<br>experiencia</span>
+                        </div>
+                    </figure>
+                    <article class="about__content">
+                        <header class="section__header section__header--left">
+                            <span class="section__tag">Sobre Nosotros</span>
+                            <h2 id="aboutTitle" class="section__title">Somos un equipo apasionado por el <span class="text-gradient">buen diseño</span></h2>
+                        </header>
+                        <p class="about__text">
+                            En <strong>Digicard</strong> creemos que el diseño no es solo estética: es comunicación estratégica. 
+                            Desde 2014, ayudamos a empresas de todos los tamaños a construir marcas sólidas y memorables.
+                        </p>
+                        <p class="about__text">
+                            Nuestro equipo multidisciplinario combina creatividad, tecnología y análisis de mercado para 
+                            entregar soluciones que no solo se ven bien, sino que funcionan.
+                        </p>
+                        <ul class="about__features">
+                            <li><i class="fa-solid fa-check-circle"></i> Enfoque en resultados medibles</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Procesos ágiles y colaborativos</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Atención personalizada</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Tecnología de vanguardia</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn--primary">
+                            <span>Conócenos mejor</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TESTIMONIOS ==================== -->
+        <section class="testimonials section section--gradient" id="testimonios" aria-labelledby="testimonialsTitle">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__tag">Testimonios</span>
+                    <h2 id="testimonialsTitle" class="section__title">Lo que dicen <span class="text-gradient">nuestros clientes</span></h2>
+                </header>
+                <div class="testimonials__slider" id="testimonialsSlider">
+                    <article class="testimonial">
+                        <div class="testimonial__stars" aria-label="5 estrellas">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial__quote">
+                            "Digicard transformó completamente nuestra imagen de marca. El proceso fue fluido, profesional y el resultado superó todas nuestras expectativas."
+                        </blockquote>
+                        <footer class="testimonial__footer">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Foto de Laura Méndez" class="testimonial__avatar" loading="lazy">
+                            <div class="testimonial__info">
+                                <cite class="testimonial__author">Laura Méndez</cite>
+                                <span class="testimonial__role">CEO, Café Aroma</span>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="testimonial">
+                        <div class="testimonial__stars" aria-label="5 estrellas">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial__quote">
+                            "La nueva interfaz de nuestra app aumentó la retención de usuarios en un 40%. Un equipo verdaderamente talentoso y comprometido."
+                        </blockquote>
+                        <footer class="testimonial__footer">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Foto de Carlos Ruiz" class="testimonial__avatar" loading="lazy">
+                            <div class="testimonial__info">
+                                <cite class="testimonial__author">Carlos Ruiz</cite>
+                                <span class="testimonial__role">CTO, TechFlow</span>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="testimonial">
+                        <div class="testimonial__stars" aria-label="5 estrellas">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial__quote">
+                            "El packaging que diseñaron para nosotros es simplemente espectacular. Destaca en cada estante y nuestros clientes lo adoran."
+                        </blockquote>
+                        <footer class="testimonial__footer">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Foto de Ana Torres" class="testimonial__avatar" loading="lazy">
+                            <div class="testimonial__info">
+                                <cite class="testimonial__author">Ana Torres</cite>
+                                <span class="testimonial__role">Founder, GreenLife</span>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+                <div class="testimonials__dots" id="testimonialsDots" role="tablist" aria-label="Navegación de testimonios"></div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACTO ==================== -->
+        <section class="contact section" id="contacto" aria-labelledby="contactTitle">
+            <div class="container">
+                <div class="contact__grid">
+                    <article class="contact__info">
+                        <header class="section__header section__header--left">
+                            <span class="section__tag">Contacto</span>
+                            <h2 id="contactTitle" class="section__title">Hagamos realidad tu <span class="text-gradient">próximo proyecto</span></h2>
+                        </header>
+                        <p class="contact__text">
+                            ¿Tienes una idea en mente? Escríbenos y te responderemos en menos de 24 horas. 
+                            La primera consulta es gratuita.
+                        </p>
+                        <address class="contact__details">
+                            <div class="contact__item">
+                                <div class="contact__icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <strong>Dirección</strong>
+                                    <span>Av. Creatividad 456, Ciudad de México</span>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <div class="contact__icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span><a href="mailto:hola@digicard.mx">hola@digicard.mx</a></span>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <div class="contact__icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <strong>Teléfono</strong>
+                                    <span><a href="tel:+525512345678">+52 55 1234 5678</a></span>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <div class="contact__icon"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <strong>Horario</strong>
+                                    <span>Lun - Vie: 9:00 - 18:00</span>
+                                </div>
+                            </div>
+                        </address>
+                        <nav class="contact__social" aria-label="Redes sociales">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                            <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                        </nav>
+                    </article>
+
+                    <form class="contact__form" id="contactForm" novalidate>
+                        <div class="form__group">
+                            <label for="name" class="form__label">Nombre completo</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Tu nombre" required minlength="2">
+                            <span class="form__error" id="nameError"></span>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Correo electrónico</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="tu@email.com" required>
+                            <span class="form__error" id="emailError"></span>
+                        </div>
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Asunto</label>
+                            <select id="subject" name="subject" class="form__input form__select" required>
+                                <option value="" disabled selected>Selecciona un servicio</option>
+                                <option value="branding">Branding & Identidad</option>
+                                <option value="web">Diseño Web & UI/UX</option>
+                                <option value="marketing">Marketing Digital</option>
+                                <option value="print">Diseño Editorial / Print</option>
+                                <option value="packaging">Packaging</option>
+                                <option value="motion">Motion Graphics</option>
+                                <option value="otro">Otro / Consulta</option>
+                            </select>
+                            <span class="form__error" id="subjectError"></span>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Mensaje</label>
+                            <textarea id="message" name="message" class="form__input form__textarea" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required minlength="10"></textarea>
+                            <span class="form__error" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                            <span>Enviar mensaje</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <div class="form__success" id="formSuccess" role="status" aria-live="polite">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>¡Mensaje enviado con éxito! Te contactaremos pronto.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <article class="footer__brand">
+                    <a href="#" class="logo" aria-label="Digicard Inicio">
+                        <span class="logo__icon"><i class="fa-solid fa-pen-nib"></i></span>
+                        <span class="logo__text">Digi<span class="logo__accent">card</span></span>
+                    </a>
+                    <p class="footer__text">Transformamos ideas en experiencias visuales impactantes. Diseño con propósito, estrategia y pasión.</p>
+                </article>
+                <nav class="footer__nav" aria-label="Enlaces rápidos">
+                    <h4 class="footer__title">Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__nav" aria-label="Servicios">
+                    <h4 class="footer__title">Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Branding</a></li>
+                        <li><a href="#servicios">Diseño Web</a></li>
+                        <li><a href="#servicios">Marketing Digital</a></li>
+                        <li><a href="#servicios">Packaging</a></li>
+                        <li><a href="#servicios">Motion Graphics</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__newsletter">
+                    <h4 class="footer__title">Newsletter</h4>
+                    <p class="footer__text">Recibe tips de diseño y tendencias directo a tu inbox.</p>
+                    <form class="footer__form" id="newsletterForm">
+                        <input type="email" class="footer__input" placeholder="tu@email.com" required>
+                        <button type="submit" class="footer__btn" aria-label="Suscribirse"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p> Digicard Agency. Todos los derechos reservados.</p>
+                <nav class="footer__legal" aria-label="Legal">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Uso</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCROLL TO TOP ==================== -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
